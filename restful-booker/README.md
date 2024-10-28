@@ -9,6 +9,7 @@ The documentation says that to get access to put and delete, you need to get a t
 1. The first get request is https://restful-booker.herokuapp.com/booking and I get all the bookingid.
 ![IMG 1](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/1.png)
 2. After that, I select any id from the list. And I'm sending another get - https://restful-booker.herokuapp.com/booking/203 . I have received information about this booking.
+
 ![IMG 2](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/2.png)
 3. Now I will create a new booking using the post method and add path: https://restful-booker.herokuapp.com/booking
 ![IMG 3](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/3.png)
