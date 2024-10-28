@@ -7,28 +7,28 @@ The documentation says that to get access to put and delete, you need to get a t
 #### GET without token
 
 1. The first get request is https://restful-booker.herokuapp.com/booking and I get all the bookingid.
-![IMG 1](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/1.png?token=GHSAT0AAAAAACYQERGXUBFW2NGTGP2LLGTUZY74J6Q)
+![IMG 1](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/1.png)
 2. After that, I select any id from the list. And I'm sending another get - https://restful-booker.herokuapp.com/booking/203 . I have received information about this booking.
-![IMG 2](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/2.png?token=GHSAT0AAAAAACYQERGXTD5VEVQJHH2IH4USZY74KRQ)
+![IMG 2](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/2.png)
 3. Now I will create a new booking using the post method and add path: https://restful-booker.herokuapp.com/booking
-![IMG 3](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/3.png?token=GHSAT0AAAAAACYQERGWRX3DRTXUEQUUBUDCZY74LDQ)
+![IMG 3](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/3.png)
 4. Now let's try to update our booking using the received id and try to change the totalprice to 155. We will expect failure because the documentation says that put and delete requests are prohibited without authorization.
-![IMG 4](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/4.png?token=GHSAT0AAAAAACYQERGXKGJVYXKVMUTV5SUMZY74LVQ)
+![IMG 4]https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/4.png)
 5. Now let's try the Partial Update Booking method. Although it is not written in the documentation that there should be a refusal without authorization, but the method does the same as the last one only partially.Use method  PATCH and path https://restful-booker.herokuapp.com/booking/:4730. Put it in the body:
-![IMG 5](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/5.png?token=GHSAT0AAAAAACYQERGWXLQNJIJIOKBHDFTOZY74MBQ)
+![IMG 5](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/5.png)
 6. Now let's try to delete our booking without a token. We use the DELETE method and the path https://restful-booker.herokuapp.com/booking/:4730.
-![IMG 6](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/6.png?token=GHSAT0AAAAAACYQERGW2EZL6BYBKU4BVYRSZY74MQA)
+![IMG 6](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/6.png)
 7. Let's try to get a token using the createToken method. Put json with its own values in the body.
-![IMG 7](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/7.png?token=GHSAT0AAAAAACYQERGWZW2ZRMW4SHCVHJ2SZY74NDQ)
+![IMG 7](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/7.png)
 Now send the default data to receive the token.
-![IMG 8](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/8.png?token=GHSAT0AAAAAACYQERGXKS7GHRW4HG7YKG7WZY74NTA)
+![IMG 8](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/8.png)
 8. Now let's try to update the booking using the UpdateBooking method and use token and all necessary headers.
 The server replied "Forbitten".
-![IMG 9](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/9.png?token=GHSAT0AAAAAACYQERGWDSVSGPJ6GZJPB34KZY74OMA)
+![IMG 9](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/9.png)
 
-![IMG 10](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/10.png?token=GHSAT0AAAAAACYQERGW32TGYMF6FCTKUIW6ZY74PAQ)
+![IMG 10](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/10.png)
 
-![IMG 11](https://raw.githubusercontent.com/3oDoR/postman-practice/refs/heads/main/restful-booker/Screens/11.png?token=GHSAT0AAAAAACYQERGXQUGAEI6UT5U65UWQZY74PMQ)
+![IMG 11](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/11.png)
 
 Just in case, I checked and repeated the request with all the data given in the sample documentation, but the result was unsuccessful again. I also tried with the created postan packages and failed again.
 
