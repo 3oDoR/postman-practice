@@ -20,7 +20,7 @@ The documentation says that to get access to put and delete, you need to get a t
 
 4. Now let's try to update our booking using the received id and try to change the totalprice to 155. We will expect failure because the documentation says that put and delete requests are prohibited without authorization.
 
-![IMG 4]https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/4.png)
+![IMG 4](https://github.com/3oDoR/postman-practice/blob/main/restful-booker/Screens/4.png)
 
 5. Now let's try the Partial Update Booking method. Although it is not written in the documentation that there should be a refusal without authorization, but the method does the same as the last one only partially.Use method  PATCH and path https://restful-booker.herokuapp.com/booking/:4730. Put it in the body:
 
